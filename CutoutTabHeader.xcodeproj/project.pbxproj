@@ -12,11 +12,10 @@
 		2398ECB12057118F00368557 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2398ECAF2057118F00368557 /* LaunchScreen.storyboard */; };
 		2398ECBC2057118F00368557 /* CutoutTabHeaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398ECBB2057118F00368557 /* CutoutTabHeaderTests.swift */; };
 		2398ECC82057132700368557 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398ECC62057132700368557 /* InboxViewController.swift */; };
-		2398ECC92057132700368557 /* CutoutTabHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398ECC72057132700368557 /* CutoutTabHeader.swift */; };
-		2398ECCB205713BC00368557 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398ECCA205713BC00368557 /* Layout.swift */; };
-		2398ECCD2057162C00368557 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398ECCC2057162C00368557 /* UIColor.swift */; };
-		2398ECCF20572CDD00368557 /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398ECCE20572CDD00368557 /* Numbers.swift */; };
-		2398ECD1205AC9DF00368557 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398ECD0205AC9DF00368557 /* ViewController.swift */; };
+		2398ECD7205B1EFF00368557 /* CutoutTabHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398ECD3205B1EFF00368557 /* CutoutTabHeader.swift */; };
+		2398ECD8205B1EFF00368557 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398ECD4205B1EFF00368557 /* Layout.swift */; };
+		2398ECD9205B1EFF00368557 /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398ECD5205B1EFF00368557 /* Numbers.swift */; };
+		2398ECDA205B1EFF00368557 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398ECD6205B1EFF00368557 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +38,10 @@
 		2398ECBB2057118F00368557 /* CutoutTabHeaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutoutTabHeaderTests.swift; sourceTree = "<group>"; };
 		2398ECBD2057118F00368557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2398ECC62057132700368557 /* InboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
-		2398ECC72057132700368557 /* CutoutTabHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CutoutTabHeader.swift; sourceTree = "<group>"; };
-		2398ECCA205713BC00368557 /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
-		2398ECCC2057162C00368557 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
-		2398ECCE20572CDD00368557 /* Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
-		2398ECD0205AC9DF00368557 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2398ECD3205B1EFF00368557 /* CutoutTabHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CutoutTabHeader.swift; sourceTree = "<group>"; };
+		2398ECD4205B1EFF00368557 /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
+		2398ECD5205B1EFF00368557 /* Numbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
+		2398ECD6205B1EFF00368557 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,11 +85,7 @@
 			children = (
 				2398ECA62057118F00368557 /* AppDelegate.swift */,
 				2398ECC62057132700368557 /* InboxViewController.swift */,
-				2398ECC72057132700368557 /* CutoutTabHeader.swift */,
-				2398ECCE20572CDD00368557 /* Numbers.swift */,
-				2398ECD0205AC9DF00368557 /* ViewController.swift */,
-				2398ECCA205713BC00368557 /* Layout.swift */,
-				2398ECCC2057162C00368557 /* UIColor.swift */,
+				2398ECD2205B1EFF00368557 /* Source */,
 				2398ECAD2057118F00368557 /* Assets.xcassets */,
 				2398ECAF2057118F00368557 /* LaunchScreen.storyboard */,
 				2398ECB22057118F00368557 /* Info.plist */,
@@ -106,6 +100,17 @@
 				2398ECBD2057118F00368557 /* Info.plist */,
 			);
 			path = CutoutTabHeaderTests;
+			sourceTree = "<group>";
+		};
+		2398ECD2205B1EFF00368557 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2398ECD3205B1EFF00368557 /* CutoutTabHeader.swift */,
+				2398ECD4205B1EFF00368557 /* Layout.swift */,
+				2398ECD5205B1EFF00368557 /* Numbers.swift */,
+				2398ECD6205B1EFF00368557 /* UIColor.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,13 +215,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2398ECCF20572CDD00368557 /* Numbers.swift in Sources */,
-				2398ECC92057132700368557 /* CutoutTabHeader.swift in Sources */,
-				2398ECCB205713BC00368557 /* Layout.swift in Sources */,
+				2398ECD7205B1EFF00368557 /* CutoutTabHeader.swift in Sources */,
+				2398ECDA205B1EFF00368557 /* UIColor.swift in Sources */,
+				2398ECD8205B1EFF00368557 /* Layout.swift in Sources */,
+				2398ECD9205B1EFF00368557 /* Numbers.swift in Sources */,
 				2398ECC82057132700368557 /* InboxViewController.swift in Sources */,
-				2398ECD1205AC9DF00368557 /* ViewController.swift in Sources */,
 				2398ECA72057118F00368557 /* AppDelegate.swift in Sources */,
-				2398ECCD2057162C00368557 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

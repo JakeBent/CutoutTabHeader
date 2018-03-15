@@ -9,8 +9,8 @@ class InboxViewController: UIViewController {
         return view
     }
 
-    let titles = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen", "Twenty"]
-    let colors: [UIColor] = [.bhBlue, .bhDarkBlue, .bhPurple, .bhRed, .bhOrange, .bhYellow, .bhGreen, .bhBlue, .bhDarkBlue, .bhPurple, .bhRed, .bhOrange, .bhYellow, .bhGreen, .bhBlue, .bhDarkBlue, .bhPurple, .bhRed, .bhOrange, .bhYellow]
+    let titles = ["One", "Two", "Three", "Four", "Five", "Six", "Seven"]
+    let colors: [UIColor] = [.bhBlue, .bhDarkBlue, .bhPurple, .bhRed, .bhOrange, .bhYellow, .bhGreen]
 
 
     let leftButton = UIBarButtonItem(barButtonSystemItem: .camera, target: nil, action: nil)
@@ -70,6 +70,8 @@ class InboxViewController: UIViewController {
         scrollView.delegate = self
         header.tabDelegate = self
     }
+
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return .portrait }
 }
 
 extension InboxViewController: UIScrollViewDelegate, CutoutTabHeaderDelegate {

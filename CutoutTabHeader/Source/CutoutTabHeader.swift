@@ -1,11 +1,11 @@
 import UIKit
 
 @objc protocol CutoutTabHeaderDelegate: class {
-    var fullPageScrollView: UIScrollView { get }
     func numberOfTabs() -> Int
     func titleForTab(index: Int) -> String
     @objc optional func colorForTab(index: Int) -> UIColor
     @objc optional func didTapTab(index: Int, completion: ((Bool) -> Void)?)
+    @objc optional var fullPageScrollView: UIScrollView { get }
 }
 
 class CutoutTabHeader: UIScrollView {
@@ -26,6 +26,7 @@ class CutoutTabHeader: UIScrollView {
 
     var initialColor: UIColor
     var unselectedColor: UIColor
+    var font: UIFont
     var currentPage: Int = 1
     var isScrollingForSelection = false
     private var titles: [String] = []
@@ -44,9 +45,10 @@ class CutoutTabHeader: UIScrollView {
         return [headerBackground, headerSlider]
     }
     
-    init(initialColor: UIColor = .black, unselectedColor: UIColor = UIColor(white: 0.85, alpha: 1)) {
+    init(initialColor: UIColor = .black, unselectedColor: UIColor = UIColor(white: 0.85, alpha: 1), font: UIFont = .boldSystemFont(ofSize: 14)) {
         self.initialColor = initialColor
         self.unselectedColor = unselectedColor
+        self.font = font
         super.init(frame: .zero)
 
         setup()
@@ -103,7 +105,8 @@ class CutoutTabHeader: UIScrollView {
             buttons.append(
                 CutoutTabHeaderCell(
                     text: titles[index],
-                    numTitles: numberOfTabs
+                    numTitles: numberOfTabs,
+                    font: font
                 ) ?? UIImageView()
             )
         }
@@ -208,7 +211,7 @@ class CutoutTabHeader: UIScrollView {
 
 class CutoutTabHeaderCell: UIImageView {
 
-    init?(text: String, numTitles: Int) {
+    init?(text: String, numTitles: Int, font: UIFont) {
         let width = (Layout.viewWidth / CGFloat(numTitles))
             .keepBetween(min: Layout.minTabWidth, max: Layout.viewWidth / 2)
         let size = CGSize(
