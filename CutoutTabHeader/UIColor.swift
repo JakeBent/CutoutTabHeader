@@ -9,6 +9,7 @@ extension UIColor {
     static let bhRed = UIColor(red: 244/255, green: 68/255, blue: 46/255, alpha: 1)
     static let bhOrange = UIColor(red: 252/255, green: 158/255, blue: 79/255, alpha: 1)
     static let bhGreen = UIColor(red: 129/255, green: 244/255, blue: 153/255, alpha: 1)
+    static let bhYellow = UIColor(red: 255/255, green: 230/255, blue: 109/255, alpha: 1)
 
     var rgb: (red: CGFloat, green: CGFloat, blue: CGFloat) {
         var red: CGFloat = 0

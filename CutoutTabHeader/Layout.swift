@@ -6,5 +6,6 @@ struct Layout {
     static let marginStandard: CGFloat = 16
     static let marginMedium: CGFloat = 8
 
-    static let colors: [UIColor] = [.bhOrange, .bhPurple, .bhGreen, .bhGrey]
+    static var minTabWidth: CGFloat { return viewWidth / 4.5 }
+
 }
