@@ -1,8 +1,8 @@
 import UIKit
 
 struct Layout {
-    static let viewWidth = UIScreen.main.bounds.width
-    static let viewHeight = UIScreen.main.bounds.height
+    static var viewWidth: CGFloat { return UIScreen.main.bounds.width }
+    static var viewHeight: CGFloat { return UIScreen.main.bounds.height }
     static let marginStandard: CGFloat = 16
     static let marginMedium: CGFloat = 8
 

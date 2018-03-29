@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		235D570A206C29BE003E5006 /* CutoutTabHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235D5709206C29BE003E5006 /* CutoutTabHeaderCell.swift */; };
 		2398ECA72057118F00368557 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398ECA62057118F00368557 /* AppDelegate.swift */; };
 		2398ECAE2057118F00368557 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2398ECAD2057118F00368557 /* Assets.xcassets */; };
 		2398ECB12057118F00368557 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2398ECAF2057118F00368557 /* LaunchScreen.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		235D5709206C29BE003E5006 /* CutoutTabHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutoutTabHeaderCell.swift; sourceTree = "<group>"; };
 		2398ECA32057118F00368557 /* CutoutTabHeader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CutoutTabHeader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2398ECA62057118F00368557 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2398ECAD2057118F00368557 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				2398ECD3205B1EFF00368557 /* CutoutTabHeader.swift */,
+				235D5709206C29BE003E5006 /* CutoutTabHeaderCell.swift */,
 				2398ECD4205B1EFF00368557 /* Layout.swift */,
 				2398ECD5205B1EFF00368557 /* Numbers.swift */,
 				2398ECD6205B1EFF00368557 /* UIColor.swift */,
@@ -219,6 +222,7 @@
 				2398ECDA205B1EFF00368557 /* UIColor.swift in Sources */,
 				2398ECD8205B1EFF00368557 /* Layout.swift in Sources */,
 				2398ECD9205B1EFF00368557 /* Numbers.swift in Sources */,
+				235D570A206C29BE003E5006 /* CutoutTabHeaderCell.swift in Sources */,
 				2398ECC82057132700368557 /* InboxViewController.swift in Sources */,
 				2398ECA72057118F00368557 /* AppDelegate.swift in Sources */,
 			);

@@ -11,5 +11,4 @@ To run the sample project:
 3. hit `Run`
 
 ## Planned features
-  - fix landscape
   - resizeable slider: make the slider resize to different sized words to allow for longer words
